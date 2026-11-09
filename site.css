@@ -1,0 +1,183 @@
+/* Hoop Zoo website: privacy policy and support pages (TR + EN). System fonts only, no trackers. */
+:root {
+  --ink: #2a1c3d;
+  --muted: #5b4a73;
+  --bg: #ffffff;
+  --card: #f4f8ff;
+  --border: #e2e8f3;
+  --link: #1d5cc8;
+  --ball: #e8601c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f3f1f8;
+    --muted: #b9b0c9;
+    --bg: #12101a;
+    --card: #1d1a28;
+    --border: #322d44;
+    --link: #8cc4ff;
+    --ball: #ff9a5c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ui-rounded, 'SF Pro Rounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+  background: linear-gradient(160deg, #6cc6ff 0%, #2a7de8 55%, #1d5cc8 100%);
+  color: #fff;
+  padding: 44px 24px 40px;
+  text-align: center;
+}
+
+.hero img {
+  width: 88px;
+  height: 88px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(10, 30, 80, 0.3);
+}
+
+.hero .brand {
+  margin: 12px 0 4px;
+  font-size: 17px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 6vw, 40px);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.hero .motto {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.hero nav {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hero nav a {
+  color: #fff;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.effective {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.summary {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 26px 10px;
+  margin: 8px 0 32px;
+}
+
+.summary h2 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 36px 0 12px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+ul,
+ol {
+  margin: 0 0 14px 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+strong {
+  font-weight: 750;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  margin: 16px 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+a {
+  color: var(--link);
+}
+
+.mail {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 20px;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+footer a {
+  color: inherit;
+}
